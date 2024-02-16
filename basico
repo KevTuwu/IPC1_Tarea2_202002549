@@ -1,0 +1,47 @@
+ import java.util.Scanner;
+
+public class Main
+{
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print(" primer numero ");
+        double n1 = scanner.nextDouble();
+
+        System.out.print("segundo numero  ");
+        double n2 = scanner.nextDouble();
+
+        System.out.println(" Opciones ");
+        System.out.println("1. Suma ");
+        System.out.println("2. Resta");
+        System.out.println("3. Multiplicacion");
+        System.out.println("4. Division");
+
+        System.out.print("Que quieres hacer ");
+        int a1 = scanner.nextInt();
+
+        switch (a1) {
+            case 1:
+                double suma = n1 + n2;
+                System.out.println("Suma es " + suma);
+                break;
+            case 2:
+                double resta = n1 - n2;
+                System.out.println("resta es" + resta);
+                break;
+            case 3:
+                double mul = n1 * n2;
+                System.out.println("Multiplicacion es " + mul);
+                break;
+            case 4:
+                    double div = n1 / n2;
+                    System.out.println("division  es  " + div);
+                break;
+            default:
+                System.out.println("no hay mas opciones, solo de 1 al  4 ");
+        }
+
+        scanner.close();
+    }
+}
